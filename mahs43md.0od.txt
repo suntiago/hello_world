@@ -1,0 +1,54 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   MyTest/.gitignore
+#	new file:   MyTest/.idea/.name
+#	new file:   MyTest/.idea/compiler.xml
+#	new file:   MyTest/.idea/copyright/profiles_settings.xml
+#	new file:   MyTest/.idea/dictionaries/yu_zai.xml
+#	new file:   MyTest/.idea/encodings.xml
+#	new file:   MyTest/.idea/gradle.xml
+#	new file:   MyTest/.idea/misc.xml
+#	new file:   MyTest/.idea/modules.xml
+#	new file:   MyTest/.idea/runConfigurations.xml
+#	new file:   MyTest/app/.gitignore
+#	new file:   MyTest/app/build.gradle
+#	new file:   MyTest/app/proguard-rules.pro
+#	new file:   MyTest/app/src/androidTest/java/com/suntiago/mytest/ApplicationTest.java
+#	new file:   MyTest/app/src/main/AndroidManifest.xml
+#	new file:   MyTest/app/src/main/java/com/suntiago/mytest/activity/MainActivity.java
+#	new file:   MyTest/app/src/main/java/com/suntiago/mytest/activity/MyActivity.java
+#	new file:   MyTest/app/src/main/java/com/suntiago/mytest/view/PickProgressView.java
+#	new file:   MyTest/app/src/main/java/com/suntiago/mytest/view/WiperSwitch.java
+#	new file:   MyTest/app/src/main/res/drawable-xxhdpi/switch_btn_off.png
+#	new file:   MyTest/app/src/main/res/drawable-xxhdpi/switch_btn_on.png
+#	new file:   MyTest/app/src/main/res/drawable-xxhdpi/switch_btn_thumb.png
+#	new file:   MyTest/app/src/main/res/layout/activity_main.xml
+#	new file:   MyTest/app/src/main/res/layout/activity_my.xml
+#	new file:   MyTest/app/src/main/res/layout/fragment_main.xml
+#	new file:   MyTest/app/src/main/res/menu/menu_main.xml
+#	new file:   MyTest/app/src/main/res/mipmap-hdpi/ic_launcher.png
+#	new file:   MyTest/app/src/main/res/mipmap-mdpi/ic_launcher.png
+#	new file:   MyTest/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+#	new file:   MyTest/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+#	new file:   MyTest/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+#	new file:   MyTest/app/src/main/res/values-v21/styles.xml
+#	new file:   MyTest/app/src/main/res/values-w820dp/dimens.xml
+#	new file:   MyTest/app/src/main/res/values/colors.xml
+#	new file:   MyTest/app/src/main/res/values/dimens.xml
+#	new file:   MyTest/app/src/main/res/values/strings.xml
+#	new file:   MyTest/app/src/main/res/values/styles.xml
+#	new file:   MyTest/app/src/test/java/com/suntiago/mytest/ExampleUnitTest.java
+#	new file:   MyTest/build.gradle
+#	new file:   MyTest/gradle.properties
+#	new file:   MyTest/gradle/wrapper/gradle-wrapper.jar
+#	new file:   MyTest/gradle/wrapper/gradle-wrapper.properties
+#	new file:   MyTest/gradlew
+#	new file:   MyTest/gradlew.bat
+#	new file:   MyTest/settings.gradle
+#
+
