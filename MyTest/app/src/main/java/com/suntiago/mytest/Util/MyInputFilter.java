@@ -1,4 +1,4 @@
-package com.suntiago.mytest.Util;
+package com.suntiago.mytest.util;
 
 import android.text.InputFilter;
 import android.text.Spanned;
@@ -32,7 +32,6 @@ public class MyInputFilter implements InputFilter {
     }
 
     /**
-     *
      *
      * @param lenChar asc words max size
      * @param lenHanzi chinese words max size

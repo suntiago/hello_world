@@ -2,14 +2,11 @@ package com.suntiago.mytest.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.InputFilter;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.widget.EditText;
 
 import com.suntiago.mytest.R;
-import com.suntiago.mytest.Util.MyInputFilter;
+import com.suntiago.mytest.util.MyInputFilter;
 import com.suntiago.mytest.view.ShakeLinearLayout;
 
 
