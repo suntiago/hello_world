@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/text_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="cm"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="左右滑动设置宝贝身高"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eee">
+        <com.suntiago.mytest.view.HorizontalListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:startIndex = "1"
+            app:endIndex = "8" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#0ef"
+            android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="save"/>
+</LinearLayout>

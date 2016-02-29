@@ -20,4 +20,26 @@
             android:layout_height="wrap_content"
             android:maxLength="5"/>
     </com.suntiago.mytest.view.ShakeLinearLayout>
+    <NumberPicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </NumberPicker>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.suntiago.mytest.view.HorizontalListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:background="#000"
+            android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+    <TextView
+        android:id="@+id/text_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

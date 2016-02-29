@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(getActivity(), MyActivity.class));
+                    startActivity(new Intent(getActivity(), NumberPickerActivity.class));
                 }
             });
             return rootView;

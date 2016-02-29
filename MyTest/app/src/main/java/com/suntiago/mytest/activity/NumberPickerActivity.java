@@ -3,65 +3,34 @@ package com.suntiago.mytest.activity;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.os.Bundle;
-import android.text.InputFilter;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.TextView;
-import com.suntiago.mytest.R;
-import com.suntiago.mytest.util.MyInputFilter;
-import com.suntiago.mytest.view.HorizontalListView;
-import com.suntiago.mytest.view.ShakeLinearLayout;
 
+import com.suntiago.mytest.R;
+import com.suntiago.mytest.view.HorizontalListView;
 
 /**
- * Created by yu.zai on 2016/2/1.
+ * Created by yu.zai on 2016/2/26.
  */
-public class MyActivity extends Activity {
-    public static final String TAG = "MyActivity";
-    ShakeLinearLayout shakeLinearLayout1;
-    EditText editText1;
-    TextView editTextCurrent;
+public class NumberPickerActivity  extends Activity{
     HorizontalListView horizontalListView;
-
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
-        initView();
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information
-    }
-
-    public void initView() {
-        editText1 = (EditText) findViewById(R.id.et_test1);
-        editText1.setFilters(new InputFilter[]{new MyInputFilter(5, 5, new MyInputFilter.CallBackOverLength() {
-            @Override
-            public void lengthChange(int now, int attempt) {
-                if (attempt > 5) {
-                    if (shakeLinearLayout1 != null) {
-                        shakeLinearLayout1.shake();
-                    }
-                }
-            }
-        })});
-        editTextCurrent = (TextView) findViewById(R.id.text_current);
-        shakeLinearLayout1 = (ShakeLinearLayout) findViewById(R.id.sl_test1);
+        setContentView(R.layout.activity_number_picker);
 
         horizontalListView = (HorizontalListView) findViewById(R.id.listview);
+        textView = (TextView) findViewById(R.id.text_current);
         horizontalListView.setAdapter(mAdapter);
         horizontalListView.setOnChangeCallBack(new HorizontalListView.CurrentXChangeCallBack() {
             @Override
             public void getCurrentX(float x) {
 //                float c = x+horizontalListView.getWidth()/2;
-                editTextCurrent.setText(x+"");
+                textView.setText(x+"");
             }
         });
     }
@@ -72,7 +41,7 @@ public class MyActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(MyActivity.this);
+                AlertDialog.Builder builder = new AlertDialog.Builder(NumberPickerActivity.this);
                 builder.setMessage("hello from " + v);
                 builder.setPositiveButton("Cool", null);
                 builder.show();
@@ -101,9 +70,9 @@ public class MyActivity extends Activity {
 //            Log.d("getSelect", "getChildAt(0).getWidth():"+getChildAt(0).getWidth()+" mMaxX:"+mMaxX+ " mCurrentX:" + mCurrentX +" count:"+mAdapter.getCount()+"");
 
 //            if (convertView == null) {
-                convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewitem, null);
-                TextView t = (TextView) convertView.findViewById(R.id.text);
-                t.setText(position+"");
+            convertView = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewitem, null);
+            TextView t = (TextView) convertView.findViewById(R.id.text);
+            t.setText(position+"");
 //            }
 
 //            float f = horizontalListView.getCurrentX();
@@ -115,5 +84,4 @@ public class MyActivity extends Activity {
         }
 
     };
-
 }
